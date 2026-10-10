@@ -1,0 +1,4 @@
+# Solo se publica index.html (GitHub Pages). Todo lo demás queda local.
+*
+!index.html
+!.gitignore

@@ -1,0 +1,793 @@
+<!DOCTYPE html>
+
+<html lang="es"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><meta content="web_standard" name="shell-type"/><title>Álvaro García Sánchez | Portfolio ASIR</title><link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&amp;family=JetBrains+Mono:wght@400;500&amp;family=Plus+Jakarta+Sans:wght@500;600;700&amp;display=swap" rel="stylesheet"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config = { darkMode: "class", theme: { extend: { "colors": { "on-surface": "#0b1c30", "surface-dim": "#cbdbf5", "surface-card": "#FFFFFF", "border-hairline": "#E2E8F0", "terminal-badge-bg": "#F0F9FF", "tertiary-container": "#007da9", "on-primary-container": "#fdfcff", "text-muted": "#64748B", "inverse-primary": "#93ccff", "surface-container-lowest": "#ffffff", "tertiary-fixed": "#c4e7ff", "primary-fixed": "#cce5ff", "on-secondary-fixed-variant": "#004c6e", "surface-variant": "#d3e4fe", "text-primary": "#0F172A", "inverse-surface": "#213145", "surface-container": "#e5eeff", "surface-tint": "#006398", "on-secondary": "#ffffff", "inverse-on-surface": "#eaf1ff", "secondary": "#006591", "surface-canvas": "#F8FAFC", "background": "#f8f9ff", "error-container": "#ffdad6", "surface-container-low": "#eff4ff", "primary-fixed-dim": "#93ccff", "terminal-badge-border": "#BAE6FD", "tertiary": "#006387", "on-tertiary-fixed-variant": "#004c69", "on-primary-fixed-variant": "#004b73", "on-secondary-fixed": "#001e2f", "surface-container-highest": "#d3e4fe", "on-error": "#ffffff", "surface-dark": "#0B1120", "surface": "#f8f9ff", "surface-bright": "#f8f9ff", "on-secondary-container": "#004666", "secondary-container": "#39b8fd", "on-background": "#0b1c30", "on-tertiary-container": "#fcfcff", "on-primary-fixed": "#001d31", "on-surface-variant": "#3f4850", "on-tertiary-fixed": "#001e2c", "outline": "#707881", "secondary-fixed": "#c9e6ff", "border-hairline-dark": "#334155", "secondary-fixed-dim": "#89ceff", "surface-container-high": "#dce9ff", "primary-container": "#007bb9", "tertiary-fixed-dim": "#7bd0ff", "on-primary": "#ffffff", "primary": "#006194", "error": "#ba1a1a", "on-tertiary": "#ffffff", "on-error-container": "#93000a", "outline-variant": "#bfc7d2", "surface-dark-card": "#1E293B" }, "borderRadius": { "DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px" }, "spacing": { "gutter": "1.5rem", "space-2xl": "4rem", "gutter-mobile": "1rem", "space-xl": "2.5rem", "space-3xl": "6rem", "space-md": "1rem", "space-lg": "1.5rem", "margin": "2rem", "margin-mobile": "1.25rem", "space-sm": "0.5rem", "space-xs": "0.25rem" }, "fontFamily": { "headline-lg": [ "Plus Jakarta Sans" ], "display-hero": [ "Plus Jakarta Sans" ], "caption": [ "Inter" ], "display-hero-mobile": [ "Plus Jakarta Sans" ], "badge-label": [ "JetBrains Mono" ], "code-inline": [ "JetBrains Mono" ], "headline-md": [ "Plus Jakarta Sans" ], "headline-lg-mobile": [ "Plus Jakarta Sans" ], "body-md": [ "Inter" ], "body-lg": [ "Inter" ], "body-sm": [ "Inter" ], "headline-sm": [ "Plus Jakarta Sans" ] }, "fontSize": { "headline-lg": [ "2.25rem", { "lineHeight": "1.25", "letterSpacing": "-0.02em", "fontWeight": "600" } ], "display-hero": [ "3.5rem", { "lineHeight": "1.1", "letterSpacing": "-0.03em", "fontWeight": "700" } ], "caption": [ "0.75rem", { "lineHeight": "1.4", "fontWeight": "400" } ], "display-hero-mobile": [ "2.25rem", { "lineHeight": "1.2", "letterSpacing": "-0.02em", "fontWeight": "700" } ], "badge-label": [ "0.75rem", { "lineHeight": "1.2", "letterSpacing": "0.02em", "fontWeight": "500" } ], "code-inline": [ "0.875rem", { "lineHeight": "1.4", "fontWeight": "500" } ], "headline-md": [ "1.5rem", { "lineHeight": "1.35", "letterSpacing": "-0.01em", "fontWeight": "600" } ], "headline-lg-mobile": [ "1.75rem", { "lineHeight": "1.3", "letterSpacing": "-0.01em", "fontWeight": "600" } ], "body-md": [ "1rem", { "lineHeight": "1.6", "fontWeight": "400" } ], "body-lg": [ "1.125rem", { "lineHeight": "1.65", "fontWeight": "400" } ], "body-sm": [ "0.875rem", { "lineHeight": "1.5", "fontWeight": "400" } ], "headline-sm": [ "1.125rem", { "lineHeight": "1.4", "fontWeight": "600" } ] } } } };</script></head><body class="bg-surface font-body-md text-on-surface antialiased selection:bg-primary-fixed selection:text-on-primary-fixed"><header class="fixed top-0 left-0 right-0 z-50 bg-surface/90 backdrop-blur-xl shadow-[0_1px_8px_rgba(0,0,0,0.04)]"><div class="h-16 max-w-6xl mx-auto px-gutter-mobile md:px-gutter flex items-center justify-between gap-space-md"><div class="flex items-center gap-space-md shrink-0"><img alt="Logo Álvaro García ASIR" class="h-8 w-auto object-contain" src="https://lh3.googleusercontent.com/aida/AEtjO1U81Jsko825TzWCZl8jJkJUF0AGoBkbo7NrhKLVkuXCft1pPtkI5O57z0bXlknk_qwkrlWOtdLNPWUrkDP9HwQtsD-olgUcqHdaXQWzrpWNSxgRxsJczJ-1CPT_Zq2h0lGpvzAUfm0j6EVnH_VEa9OgV66cXX_xF87a9fFln4V5ImrvueYD2Y-je_-Me2OA496SN16x5J_J3wMjDedAfv3rdROfae3qb-poXb3b-b8Rr1VgTtLAEgcXe6Nt"/><div class="flex flex-col"><span class="font-headline-sm text-headline-sm text-text-primary leading-none">Álvaro García</span><span class="font-badge-label text-badge-label text-text-muted mt-space-xs">SysAdmin / ASIR</span></div></div><nav class="hidden lg:flex items-center gap-space-lg" data-active-classes="text-primary font-headline-sm"><a class="font-body-sm text-body-sm text-on-surface-variant hover:text-on-surface transition-colors" data-path="sobre-mi" href="#sobre-mi">Sobre mí</a><a class="font-body-sm text-body-sm text-on-surface-variant hover:text-on-surface transition-colors" data-path="aptitudes" href="#aptitudes">Aptitudes</a><a class="font-body-sm text-body-sm text-on-surface-variant hover:text-on-surface transition-colors" data-path="proyectos" href="#proyectos">Proyectos &amp; Drive</a><a class="font-body-sm text-body-sm text-on-surface-variant hover:text-on-surface transition-colors" data-path="formacion" href="#formacion">Formación</a><a class="font-body-sm text-body-sm text-on-surface-variant hover:text-on-surface transition-colors" data-path="experiencia" href="#experiencia">Experiencia</a><a class="font-body-sm text-body-sm text-on-surface-variant hover:text-on-surface transition-colors" data-path="contacto" href="#contacto">Contacto</a></nav><div class="flex items-center gap-space-sm shrink-0"><div class="hidden sm:flex items-center gap-space-xs px-space-sm py-space-xs rounded-full bg-terminal-badge-bg text-secondary border border-terminal-badge-border"><span class="w-2 h-2 rounded-full bg-secondary animate-pulse"></span><span class="font-badge-label text-badge-label">Disponible FCT / Prácticas</span></div><a class="inline-flex items-center gap-space-xs px-space-md py-space-xs rounded-lg bg-primary text-on-primary font-headline-sm text-body-sm hover:bg-primary-container transition-all shadow-[0_1px_3px_0_rgba(15,23,42,0.08)]" href="#" title="Descargar CV en formato PDF"><span class="material-symbols-outlined text-[16px]">description</span><span class="hidden md:inline font-headline-sm text-body-sm">CV PDF</span></a><div class="w-8 h-8 rounded-full bg-primary flex items-center justify-center shrink-0"><span class="material-symbols-outlined text-on-primary text-[18px]">person</span></div></div></div></header><main class="w-full pt-16 bg-surface"><div class="flex flex-col w-full">
+<!-- TOP STATUS BAR & INTRO WORKSPACE -->
+<section class="max-w-6xl mx-auto px-gutter-mobile md:px-gutter w-full pt-space-xl pb-space-2xl">
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-space-lg items-start">
+<!-- Left Column: Biography & Positioning -->
+<div class="lg:col-span-8 flex flex-col gap-space-md">
+<!-- Breadcrumb / Status Badge -->
+<div class="flex flex-wrap items-center gap-space-sm text-text-muted">
+<span class="inline-flex items-center gap-space-xs px-space-sm py-space-xs rounded-full bg-terminal-badge-bg text-secondary border border-terminal-badge-border font-badge-label text-badge-label">
+<span class="w-1.5 h-1.5 rounded-full bg-secondary"></span>
+            SYSADMIN // ASIR (2º CICLO DUAL)
+          </span>
+<span class="font-code-inline text-code-inline text-outline">•</span>
+<span class="inline-flex items-center gap-space-xs font-badge-label text-badge-label text-text-muted">
+<span class="material-symbols-outlined text-[14px]">location_on</span>
+            Sanlúcar de Barrameda, Andalucía, España
+          </span>
+</div>
+<!-- Headline & Main Identity -->
+<h1 class="font-display-hero text-headline-lg md:text-display-hero text-text-primary tracking-tight">
+          Álvaro García Sánchez
+        </h1>
+<p class="font-headline-md text-headline-sm md:text-headline-md text-secondary font-medium leading-snug">
+          Estudiante de ASIR · Enfoque en Sistemas, Redes y Entornos Linux
+        </p>
+<!-- Bio Abstract -->
+<p class="font-body-lg text-body-md md:text-body-lg text-on-surface-variant max-w-3xl leading-relaxed">
+          Técnico en formación especializado en la arquitectura e implementación de infraestructuras IT fiables. Vocación orientada a la administración de servidores Debian/Ubuntu y Windows Server, diseño de redes segmentadas con VLANs y automatización sistemática mediante Bash. Capacidad contrastada de resolución metódica, documentación rigurosa y trabajo bajo SLA exigentes procedente de 3 años en operaciones complejas.
+        </p>
+<!-- CTA & Quick Contacts (Strictly Email & LinkedIn) -->
+<div class="flex flex-wrap items-center gap-space-md pt-space-xs">
+<a class="inline-flex items-center gap-space-sm px-space-lg py-space-sm rounded-lg bg-primary text-on-primary font-headline-sm text-body-sm shadow-sm hover:bg-primary-container transition-all" href="https://mail.google.com/mail/?view=cm&fs=1&to=alvarogprod@gmail.com" rel="noreferrer" target="_blank" title="Escribir a alvarogprod@gmail.com vía Gmail">
+<span class="material-symbols-outlined text-[18px]">mail</span>
+<span>alvarogprod@gmail.com</span>
+</a>
+<button id="copy-email-hero" data-email="alvarogprod@gmail.com" title="Copiar email" class="inline-flex items-center gap-space-xs px-space-sm py-space-sm rounded-lg bg-surface-container-lowest text-text-muted font-headline-sm text-body-sm border border-border-hairline shadow-sm hover:text-text-primary transition-all">
+<span class="material-symbols-outlined text-[18px]">content_copy</span>
+</button>
+<a class="inline-flex items-center gap-space-sm px-space-lg py-space-sm rounded-lg bg-surface-container-lowest text-text-primary font-headline-sm text-body-sm border border-border-hairline shadow-sm hover:bg-surface-container-low transition-all" href="https://www.linkedin.com/in/alvaro-garcia-sanchez" rel="noreferrer" target="_blank">
+<span class="material-symbols-outlined text-[18px]">contact_page</span>
+<span>LinkedIn Profile</span>
+<span class="material-symbols-outlined text-[14px] text-text-muted">north_east</span>
+</a>
+<a class="inline-flex items-center gap-space-xs font-headline-sm text-body-sm text-secondary hover:text-primary transition-colors" href="#proyectos">
+<span>Explorar Proyectos y Drive</span>
+<span class="material-symbols-outlined text-[16px]">arrow_downward</span>
+</a>
+</div>
+</div>
+<!-- Right Column: System Terminal Snapshot -->
+<div class="lg:col-span-4 w-full">
+<div class="rounded-xl bg-surface-dark text-on-primary-container p-space-md shadow-md border border-border-hairline-dark flex flex-col font-code-inline text-caption">
+<!-- Terminal Header -->
+<div class="flex items-center justify-between pb-space-sm border-b border-border-hairline-dark/60 mb-space-sm">
+<div class="flex items-center gap-space-xs">
+<span class="w-2.5 h-2.5 rounded-full bg-error inline-block"></span>
+<span class="w-2.5 h-2.5 rounded-full bg-secondary inline-block"></span>
+<span class="w-2.5 h-2.5 rounded-full bg-primary-fixed-dim inline-block"></span>
+</div>
+<span class="font-badge-label text-badge-label text-text-muted">alvaro@asir-node:~$</span>
+</div>
+<!-- Terminal Content -->
+<div class="space-y-space-xs font-code-inline text-caption">
+<div class="text-secondary-fixed">
+<span class="text-terminal-badge-border">$</span> whoami --status
+            </div>
+<div class="text-surface-dim pl-space-xs">
+              » Perfil: SysAdmin &amp; Redes Junior<br/>
+              » Disponibilidad: FCT / Prácticas Duales<br/>
+              » Repositorio: Google Drive
+            </div>
+<div class="text-secondary-fixed pt-space-xs">
+<span class="text-terminal-badge-border">$</span> systemctl is-active infrastructure.service
+            </div>
+<div class="text-primary-fixed flex items-center gap-space-xs pl-space-xs">
+<span class="w-1.5 h-1.5 rounded-full bg-secondary-container animate-pulse"></span>
+<span>active (running) - Uptime 100%</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- SECCIÓN APTITUDES & STACK TÉCNICO -->
+<section class="w-full bg-surface-container-low py-space-2xl" id="aptitudes">
+<div class="max-w-6xl mx-auto px-gutter-mobile md:px-gutter">
+<!-- Section Header -->
+<div class="flex flex-col md:flex-row md:items-end justify-between mb-space-xl gap-space-sm">
+<div>
+<span class="font-badge-label text-badge-label text-secondary tracking-widest uppercase">01 // MATRIZ TÉCNICA</span>
+<h2 class="font-headline-lg text-headline-lg text-text-primary mt-space-xs">Aptitudes &amp; Competencias de Infraestructura</h2>
+</div>
+<p class="font-body-sm text-body-sm text-text-muted max-w-md">
+          Capacidades operativas probadas en talleres de laboratorio, simulaciones de topología empresarial y administración de servicios reales.
+        </p>
+</div>
+<!-- Skills Bento Grid -->
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-space-md">
+<!-- Skill 1: Linux -->
+<div class="bg-surface-card rounded-xl p-space-lg border border-border-hairline shadow-sm hover:border-terminal-badge-border transition-all flex flex-col justify-between">
+<div>
+<div class="w-10 h-10 rounded-lg bg-terminal-badge-bg text-secondary flex items-center justify-center mb-space-md">
+<span class="material-symbols-outlined text-[24px]">terminal</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-text-primary mb-space-xs">Linux Servers</h3>
+<p class="font-body-sm text-body-sm text-text-muted mb-space-md">
+              Administración avanzada de distribuciones Debian, Ubuntu Server y RHEL. Control granular de permisos ACL, gestión de servicios con systemd y scripting.
+            </p>
+</div>
+<div class="flex flex-wrap gap-space-xs pt-space-xs border-t border-surface-container">
+<span class="px-space-xs py-0.5 rounded bg-surface-container font-badge-label text-caption text-text-primary">Debian</span>
+<span class="px-space-xs py-0.5 rounded bg-surface-container font-badge-label text-caption text-text-primary">Ubuntu</span>
+<span class="px-space-xs py-0.5 rounded bg-surface-container font-badge-label text-caption text-text-primary">Bash</span>
+<span class="px-space-xs py-0.5 rounded bg-surface-container font-badge-label text-caption text-text-primary">systemd</span>
+</div>
+</div>
+<!-- Skill 2: Windows Server -->
+<div class="bg-surface-card rounded-xl p-space-lg border border-border-hairline shadow-sm hover:border-terminal-badge-border transition-all flex flex-col justify-between">
+<div>
+<div class="w-10 h-10 rounded-lg bg-terminal-badge-bg text-secondary flex items-center justify-center mb-space-md">
+<span class="material-symbols-outlined text-[24px]">domain</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-text-primary mb-space-xs">Windows Server</h3>
+<p class="font-body-sm text-body-sm text-text-muted mb-space-md">
+              Implementación y despliegue de entornos Active Directory Domain Services, bosque de usuarios, directivas GPO de seguridad corporativa, DNS y DHCP.
+            </p>
+</div>
+<div class="flex flex-wrap gap-space-xs pt-space-xs border-t border-surface-container">
+<span class="px-space-xs py-0.5 rounded bg-surface-container font-badge-label text-caption text-text-primary">Active Directory</span>
+<span class="px-space-xs py-0.5 rounded bg-surface-container font-badge-label text-caption text-text-primary">GPOs</span>
+<span class="px-space-xs py-0.5 rounded bg-surface-container font-badge-label text-caption text-text-primary">DNS/DHCP</span>
+</div>
+</div>
+<!-- Skill 3: Redes & Conectividad -->
+<div class="bg-surface-card rounded-xl p-space-lg border border-border-hairline shadow-sm hover:border-terminal-badge-border transition-all flex flex-col justify-between">
+<div>
+<div class="w-10 h-10 rounded-lg bg-terminal-badge-bg text-secondary flex items-center justify-center mb-space-md">
+<span class="material-symbols-outlined text-[24px]">hub</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-text-primary mb-space-xs">Redes &amp; Conmutación</h3>
+<p class="font-body-sm text-body-sm text-text-muted mb-space-md">
+              Arquitecturas en Cisco Packet Tracer, segmentación por VLANs (802.1Q), subnetting estructurado IPv4/IPv6, enrutamiento estático/dinámico y firewalling.
+            </p>
+</div>
+<div class="flex flex-wrap gap-space-xs pt-space-xs border-t border-surface-container">
+<span class="px-space-xs py-0.5 rounded bg-surface-container font-badge-label text-caption text-text-primary">Packet Tracer</span>
+<span class="px-space-xs py-0.5 rounded bg-surface-container font-badge-label text-caption text-text-primary">VLAN</span>
+<span class="px-space-xs py-0.5 rounded bg-surface-container font-badge-label text-caption text-text-primary">IPv4/v6</span>
+<span class="px-space-xs py-0.5 rounded bg-surface-container font-badge-label text-caption text-text-primary">OSPF</span>
+</div>
+</div>
+<!-- Skill 4: Virtualización & Cloud -->
+<div class="bg-surface-card rounded-xl p-space-lg border border-border-hairline shadow-sm hover:border-terminal-badge-border transition-all flex flex-col justify-between">
+<div>
+<div class="w-10 h-10 rounded-lg bg-terminal-badge-bg text-secondary flex items-center justify-center mb-space-md">
+<span class="material-symbols-outlined text-[24px]">deployed_code</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-text-primary mb-space-xs">Virtualización &amp; Containers</h3>
+<p class="font-body-sm text-body-sm text-text-muted mb-space-md">
+              Aislamiento y densidad de servicios mediante hipervisores Type-1 y Type-2: Proxmox VE, VMware ESXi/Workstation, contenedores Docker y microentornos LXC.
+            </p>
+</div>
+<div class="flex flex-wrap gap-space-xs pt-space-xs border-t border-surface-container">
+<span class="px-space-xs py-0.5 rounded bg-surface-container font-badge-label text-caption text-text-primary">Proxmox</span>
+<span class="px-space-xs py-0.5 rounded bg-surface-container font-badge-label text-caption text-text-primary">Docker</span>
+<span class="px-space-xs py-0.5 rounded bg-surface-container font-badge-label text-caption text-text-primary">LXC</span>
+<span class="px-space-xs py-0.5 rounded bg-surface-container font-badge-label text-caption text-text-primary">VMware</span>
+</div>
+</div>
+<!-- Skill 5: Bases de Datos -->
+<div class="bg-surface-card rounded-xl p-space-lg border border-border-hairline shadow-sm hover:border-terminal-badge-border transition-all flex flex-col justify-between">
+<div>
+<div class="w-10 h-10 rounded-lg bg-terminal-badge-bg text-secondary flex items-center justify-center mb-space-md">
+<span class="material-symbols-outlined text-[24px]">database</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-text-primary mb-space-xs">Gestión de Bases de Datos</h3>
+<p class="font-body-sm text-body-sm text-text-muted mb-space-md">
+              Diseño relacional entidad-relación, normalización (1NF a 3NF), consultas SQL complejas, creación de usuarios, privilegios y políticas de copias mysqldump.
+            </p>
+</div>
+<div class="flex flex-wrap gap-space-xs pt-space-xs border-t border-surface-container">
+<span class="px-space-xs py-0.5 rounded bg-surface-container font-badge-label text-caption text-text-primary">MariaDB</span>
+<span class="px-space-xs py-0.5 rounded bg-surface-container font-badge-label text-caption text-text-primary">MySQL</span>
+<span class="px-space-xs py-0.5 rounded bg-surface-container font-badge-label text-caption text-text-primary">DML/DDL</span>
+</div>
+</div>
+<!-- Skill 6: Mantenimiento y Backups -->
+<div class="bg-surface-card rounded-xl p-space-lg border border-border-hairline shadow-sm hover:border-terminal-badge-border transition-all flex flex-col justify-between">
+<div>
+<div class="w-10 h-10 rounded-lg bg-terminal-badge-bg text-secondary flex items-center justify-center mb-space-md">
+<span class="material-symbols-outlined text-[24px]">security</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-text-primary mb-space-xs">SysAdmin &amp; Backups</h3>
+<p class="font-body-sm text-body-sm text-text-muted mb-space-md">
+              Políticas de respaldo programado (Rsnapshot/Rsync), monitorización de consumo y memoria, rotación de logs (logrotate) y auditorías de integridad.
+            </p>
+</div>
+<div class="flex flex-wrap gap-space-xs pt-space-xs border-t border-surface-container">
+<span class="px-space-xs py-0.5 rounded bg-surface-container font-badge-label text-caption text-text-primary">Cron</span>
+<span class="px-space-xs py-0.5 rounded bg-surface-container font-badge-label text-caption text-text-primary">Rsync</span>
+<span class="px-space-xs py-0.5 rounded bg-surface-container font-badge-label text-caption text-text-primary">Logs</span>
+</div>
+</div>
+<!-- Skill 7: IA aplicada a SysAdmin -->
+<div class="bg-surface-card rounded-xl p-space-lg border border-border-hairline shadow-sm hover:border-terminal-badge-border transition-all flex flex-col justify-between">
+<div>
+<div class="w-10 h-10 rounded-lg bg-terminal-badge-bg text-secondary flex items-center justify-center mb-space-md">
+<span class="material-symbols-outlined text-[24px]">smart_toy</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-text-primary mb-space-xs">Inteligencia Artificial</h3>
+<p class="font-body-sm text-body-sm text-text-muted mb-space-md">
+              Uso metódico de LLMs y asistentes de código para validación de sintaxis en scripts, optimización de expresiones regulares y diagnóstico acelerado de errores.
+            </p>
+</div>
+<div class="flex flex-wrap gap-space-xs pt-space-xs border-t border-surface-container">
+<span class="px-space-xs py-0.5 rounded bg-surface-container font-badge-label text-caption text-text-primary">Prompting IT</span>
+<span class="px-space-xs py-0.5 rounded bg-surface-container font-badge-label text-caption text-text-primary">Bash Assist</span>
+<span class="px-space-xs py-0.5 rounded bg-surface-container font-badge-label text-caption text-text-primary">Troubleshooting</span>
+</div>
+</div>
+<!-- Skill 8: Idiomas & Comunicación -->
+<div class="bg-surface-card rounded-xl p-space-lg border border-border-hairline shadow-sm hover:border-terminal-badge-border transition-all flex flex-col justify-between">
+<div>
+<div class="w-10 h-10 rounded-lg bg-terminal-badge-bg text-secondary flex items-center justify-center mb-space-md">
+<span class="material-symbols-outlined text-[24px]">translate</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-text-primary mb-space-xs">Idiomas &amp; Comunicación</h3>
+<p class="font-body-sm text-body-sm text-text-muted mb-space-md">
+              Capacidad técnica fluida para lectura de manuales técnicos RFC, documentación y entornos internacionales multiculturales.
+            </p>
+</div>
+<div class="flex flex-col gap-space-xs pt-space-xs border-t border-surface-container">
+<div class="flex justify-between items-center text-caption font-badge-label">
+<span class="text-text-primary">Español</span>
+<span class="text-secondary">Nativo</span>
+</div>
+<div class="flex justify-between items-center text-caption font-badge-label">
+<span class="text-text-primary">Inglés</span>
+<span class="text-secondary">Competencia Profesional</span>
+</div>
+<div class="flex justify-between items-center text-caption font-badge-label">
+<span class="text-text-primary">Japonés</span>
+<span class="text-text-muted">Básico - Medio (A2/B1)</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- SECCIÓN PROYECTOS, ACTIVIDADES DE CLASE & INTEGRACIÓN DRIVE -->
+<section class="w-full py-space-3xl" id="proyectos">
+<div class="max-w-6xl mx-auto px-gutter-mobile md:px-gutter">
+<!-- Section Header with Drive Sync Callout Banner -->
+<div class="flex flex-col gap-space-md mb-space-xl">
+<div class="flex flex-col md:flex-row md:items-end justify-between gap-space-sm">
+<div>
+<span class="font-badge-label text-badge-label text-secondary tracking-widest uppercase">02 // BANCO DE PRÁCTICAS &amp; DRIVE</span>
+<h2 class="font-headline-lg text-headline-lg text-text-primary mt-space-xs">Proyectos &amp; Documentación Técnica</h2>
+</div>
+<span class="font-badge-label text-badge-label text-text-muted">
+<span class="inline-block w-2 h-2 rounded-full bg-secondary mr-1"></span>
+            <span id="projects-count-label">Cargando proyectos desde Drive…</span>
+          </span>
+</div>
+<!-- Filter Tabs & Search Bar -->
+<div class="flex flex-col md:flex-row items-stretch md:items-center justify-between gap-space-md pt-space-xs">
+<!-- Filter Buttons -->
+<div class="flex items-center gap-space-xs overflow-x-auto pb-1" id="filter-container">
+<button class="filter-btn px-space-md py-space-xs rounded-lg font-headline-sm text-caption transition-all bg-primary text-on-primary" data-category="all">
+              Todos (<span id="projects-count-num">…</span>)
+            </button>
+<button class="filter-btn px-space-md py-space-xs rounded-lg font-headline-sm text-caption transition-all bg-surface-card text-text-muted hover:text-text-primary border border-border-hairline" data-category="linux">
+              Linux &amp; Servidores
+            </button>
+<button class="filter-btn px-space-md py-space-xs rounded-lg font-headline-sm text-caption transition-all bg-surface-card text-text-muted hover:text-text-primary border border-border-hairline" data-category="redes">
+              Redes &amp; Packet Tracer
+            </button>
+<button class="filter-btn px-space-md py-space-xs rounded-lg font-headline-sm text-caption transition-all bg-surface-card text-text-muted hover:text-text-primary border border-border-hairline" data-category="windows">
+              Windows Server &amp; AD
+            </button>
+<button class="filter-btn px-space-md py-space-xs rounded-lg font-headline-sm text-caption transition-all bg-surface-card text-text-muted hover:text-text-primary border border-border-hairline" data-category="scripts">
+              Scripts &amp; Automatización
+            </button>
+<button class="filter-btn px-space-md py-space-xs rounded-lg font-headline-sm text-caption transition-all bg-surface-card text-text-muted hover:text-text-primary border border-border-hairline" data-category="bd">
+              Bases de Datos
+            </button>
+</div>
+<!-- Keyword Search Input -->
+<div class="relative w-full md:w-64 shrink-0">
+<span class="material-symbols-outlined absolute left-3 top-1/2 -translate-y-1/2 text-text-muted text-[18px]">search</span>
+<input class="w-full pl-9 pr-3 py-1.5 rounded-lg bg-surface-card border border-border-hairline font-body-sm text-caption text-text-primary placeholder:text-text-muted focus:outline-none focus:border-secondary focus:ring-1 focus:ring-secondary transition-all" id="project-search" placeholder="Filtrar por tecnología..." type="text"/>
+</div>
+</div>
+</div>
+<!-- Projects Grid -->
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-space-lg" id="projects-grid">
+<!-- Render dinámico desde Google Sheets CSV -->
+<div id="projects-loading" class="col-span-full rounded-xl bg-surface-card border border-border-hairline p-space-lg text-center font-body-sm text-body-sm text-text-muted">Cargando proyectos desde Google Drive…</div>
+<div id="projects-empty" class="hidden col-span-full rounded-xl bg-terminal-badge-bg border border-terminal-badge-border p-space-xl text-center">
+<p class="font-headline-sm text-body-sm text-text-primary font-semibold mb-1">Aún no hay proyectos publicados</p>
+<p class="font-body-sm text-body-sm text-text-muted mb-3">Sube tus PDFs a la carpeta de Drive, compártelos como “Cualquier persona con el enlace”, y añade una fila en tu Google Sheet con columnas:<br/><code>titulo, categoria, descripcion, tags, drive_id</code><br/>Sin Google también vale: edita <code>proyectos.json</code> o <code>LOCAL_PROJECTS</code> en el propio <code>index.html</code> (mismo formato, sin servidor).</p>
+<a class="inline-flex items-center gap-1 font-headline-sm text-caption text-secondary hover:text-primary" target="_blank" rel="noreferrer" href="https://docs.google.com/spreadsheets/d/e/2PACX-1vT_iZCiWNH_De0JAftiMXvnWhXZZPlIouY0EHOEFeNWL3V1p4zVqgZuzjymAQ-R6ukzr3lhXpCo-hhm/pubhtml"><span class="material-symbols-outlined text-[16px]">open_in_new</span><span>Abrir Google Sheet publicado</span></a>
+</div>
+<div id="projects-error" class="hidden col-span-full rounded-xl bg-error-container border border-error p-space-lg text-center font-body-sm text-body-sm text-on-error-container"></div>
+</div>
+</div>
+</div>
+</section>
+<!-- FORMACIÓN ACADÉMICA & EXPERIENCIA PREVIA (SPLIT GRID) -->
+<section class="w-full bg-surface-container-low py-space-3xl" id="formacion">
+<div class="max-w-6xl mx-auto px-gutter-mobile md:px-gutter">
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-space-xl">
+<!-- Columna Izquierda: Formación Académica -->
+<div class="lg:col-span-7 flex flex-col gap-space-lg">
+<div>
+<span class="font-badge-label text-badge-label text-secondary tracking-widest uppercase">03 // TRAYECTORIA ACADÉMICA</span>
+<h2 class="font-headline-lg text-headline-lg text-text-primary mt-space-xs">Formación &amp; Estudios</h2>
+<p class="font-body-sm text-body-sm text-text-muted mt-space-xs">
+              Especialización técnica formal complementada con competencias sólidas en documentación y medios técnicos.
+            </p>
+</div>
+<div class="space-y-space-md">
+<!-- ASIR CITED -->
+<div class="bg-surface-card rounded-xl p-space-lg border border-border-hairline shadow-sm relative pl-space-xl">
+<div class="absolute left-4 top-6 w-2 h-2 rounded-full bg-secondary"></div>
+<div class="flex flex-wrap items-baseline justify-between gap-space-xs mb-space-xs">
+<h3 class="font-headline-sm text-headline-sm text-text-primary font-semibold">
+                  CFGS Administración de Sistemas Informáticos en Red (ASIR) — Cursando
+                </h3>
+<span class="font-badge-label text-badge-label text-secondary">2026 - 2028</span>
+</div>
+<p class="font-body-sm text-body-sm font-medium text-text-primary mb-space-xs">
+                CITED · Modalidad Dual (Jerez de la Frontera, Cádiz)
+              </p>
+<p class="font-body-sm text-body-sm text-text-muted">
+                Formación avanzada con inmersión práctica en diseño y mantenimiento de redes, despliegue de servidores Linux y Windows Server, seguridad perimetral, administración de gestores de bases de datos y desarrollo de proyectos integradores en empresas del sector.
+              </p>
+</div>
+<!-- Formación Previa Imagen & Sonido -->
+<div class="bg-surface-card rounded-xl p-space-lg border border-border-hairline shadow-sm relative pl-space-xl">
+<div class="absolute left-4 top-6 w-2 h-2 rounded-full bg-outline"></div>
+<div class="flex flex-wrap items-baseline justify-between gap-space-xs mb-space-xs">
+<h3 class="font-headline-sm text-headline-sm text-text-primary font-semibold">
+                  CFGS Iluminación, captación y tratamiento de imagen
+                </h3>
+<span class="font-badge-label text-badge-label text-text-muted">Finalizado</span>
+</div>
+<p class="font-body-sm text-body-sm font-medium text-text-primary mb-space-xs">
+                Familia Profesional de Imagen y Sonido
+              </p>
+<p class="font-body-sm text-body-sm text-text-muted">
+                Base sólida en rigor metodológico, tratamiento exhaustivo de detalles técnicos, organización de flujos de trabajo de proyectos complejos y redacción clara de documentación técnica estructurada con apoyo visual de calidad.
+              </p>
+</div>
+<div class="bg-surface-card rounded-xl p-space-lg border border-border-hairline shadow-sm relative pl-space-xl">
+<div class="absolute left-4 top-6 w-2 h-2 rounded-full bg-outline"></div>
+<div class="flex flex-wrap items-baseline justify-between gap-space-xs mb-space-xs">
+<h3 class="font-headline-sm text-headline-sm text-text-primary font-semibold">
+                  CFGM Laboratorio de imagen
+                </h3>
+<span class="font-badge-label text-badge-label text-text-muted">Finalizado</span>
+</div>
+<p class="font-body-sm text-body-sm font-medium text-text-primary mb-space-xs">
+                Familia Profesional de Imagen y Sonido
+              </p>
+<p class="font-body-sm text-body-sm text-text-muted">
+                Procesado, control de calidad y gestión de material fotosensible y digital con procedimientos de laboratorio estrictos y trazabilidad.
+              </p>
+</div>
+</div>
+</div>
+<!-- Columna Derecha: Experiencia Previa & Competencias Transferibles -->
+<div class="lg:col-span-5 flex flex-col gap-space-lg" id="experiencia">
+<div>
+<span class="font-badge-label text-badge-label text-secondary tracking-widest uppercase">04 // TRAYECTORIA OPERATIVA</span>
+<h2 class="font-headline-lg text-headline-lg text-text-primary mt-space-xs">Experiencia Laboral</h2>
+<p class="font-body-sm text-body-sm text-text-muted mt-space-xs">
+              Valores y destrezas prácticas transferibles directamente al entorno de infraestructuras IT críticas.
+            </p>
+</div>
+<!-- Amazon Experience Card -->
+<div class="bg-surface-card rounded-xl p-space-lg border border-border-hairline shadow-sm flex flex-col justify-between h-full">
+<div>
+<div class="flex items-center justify-between mb-space-sm">
+<span class="inline-flex items-center gap-1 font-badge-label text-caption px-2 py-0.5 rounded bg-terminal-badge-bg text-secondary border border-terminal-badge-border">
+                  LOGÍSTICA &amp; OPERACIONES CRÍTICAS
+                </span>
+<span class="font-badge-label text-badge-label text-text-muted">3 Años de Trayectoria</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-text-primary mb-space-xs">
+                Operador Logístico (Amazon)
+              </h3>
+<p class="font-body-sm text-body-sm text-text-muted mb-space-md">
+                Experiencia consolidada en un ecosistema guiado por métricas exigentes, procesos estandarizados y tolerancias mínimas a fallo. Resolución y gestión de problemas en planta y control de inventario.
+              </p>
+<!-- Competencias transferibles en lista estructurada -->
+<div class="space-y-space-sm pt-space-xs border-t border-surface-container">
+<div class="flex items-start gap-space-sm">
+<span class="material-symbols-outlined text-secondary text-[18px] shrink-0 mt-0.5">verified</span>
+<div>
+<span class="font-headline-sm text-body-sm text-text-primary block">Resolución y gestión de problemas</span>
+<span class="font-caption text-caption text-text-muted">Análisis metódico de incidencias en planta y aplicación de soluciones bajo presión, transferible a la gestión de incidentes IT.</span>
+</div>
+</div>
+<div class="flex items-start gap-space-sm">
+<span class="material-symbols-outlined text-secondary text-[18px] shrink-0 mt-0.5">verified</span>
+<div>
+<span class="font-headline-sm text-body-sm text-text-primary block">Control de inventario y trazabilidad</span>
+<span class="font-caption text-caption text-text-muted">Registro, verificación y cuadre de stock con tolerancia mínima a error, equivalente a gestión de activos e inventario de sistemas.</span>
+</div>
+</div>
+<div class="flex items-start gap-space-sm">
+<span class="material-symbols-outlined text-secondary text-[18px] shrink-0 mt-0.5">verified</span>
+<div>
+<span class="font-headline-sm text-body-sm text-text-primary block">Resolución Dinámica en Equipo</span>
+<span class="font-caption text-caption text-text-muted">Comunicación asertiva entre departamentos técnicos y operativos para optimizar los flujos continuos.</span>
+</div>
+</div>
+</div>
+</div>
+<div class="mt-space-lg p-space-sm rounded-lg bg-surface-container-low font-code-inline text-caption text-text-muted">
+              // Competencia extrapolada: Resiliencia en despliegues y gestión de incidentes en tiempo real.
+            </div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- SECCIÓN CONTACTO / FINAL WORKBENCH -->
+<section class="w-full py-space-3xl" id="contacto">
+<div class="max-w-6xl mx-auto px-gutter-mobile md:px-gutter">
+<div class="rounded-2xl bg-surface-dark text-on-surface p-space-xl md:p-space-2xl border border-border-hairline-dark relative overflow-hidden shadow-lg">
+<!-- Subtle network grid background decoration -->
+<div class="absolute -right-20 -bottom-20 w-80 h-80 rounded-full bg-secondary/10 blur-3xl pointer-events-none"></div>
+<div class="max-w-2xl relative z-10">
+<span class="font-badge-label text-badge-label text-secondary-fixed tracking-widest uppercase">05 // CONECTAR</span>
+<h2 class="font-headline-lg text-headline-lg text-surface-card mt-space-xs mb-space-sm">
+            ¿Buscas incorporar un perfil técnico disciplinado en tu equipo de Sistemas o Redes?
+          </h2>
+<p class="font-body-lg text-body-md text-surface-dim mb-space-xl">
+            Disponible para entrevistas formativas, prácticas de FP Dual / FCT y colaboraciones en administración de sistemas, monitorización y soporte de infraestructura en Andalucía o remoto.
+          </p>
+<!-- Direct action items (No phone, no postal address for privacy) -->
+<div class="flex flex-col sm:flex-row items-stretch sm:items-center gap-space-md">
+<a class="inline-flex items-center justify-center gap-space-sm px-space-lg py-space-md rounded-lg bg-secondary-container text-on-secondary-container font-headline-sm text-body-sm hover:brightness-105 transition-all shadow-md" href="https://mail.google.com/mail/?view=cm&fs=1&to=alvarogprod@gmail.com" rel="noreferrer" target="_blank" title="Escribir a alvarogprod@gmail.com vía Gmail">
+<span class="material-symbols-outlined text-[20px]">send</span>
+<span>Enviar Email de Contacto</span>
+</a>
+<button id="copy-email-contact" data-email="alvarogprod@gmail.com" title="Copiar alvarogprod@gmail.com" class="inline-flex items-center justify-center gap-space-sm px-space-md py-space-md rounded-lg bg-surface-dark-card text-on-primary-container font-headline-sm text-body-sm border border-border-hairline-dark hover:bg-border-hairline-dark/40 transition-all">
+<span class="material-symbols-outlined text-[20px]">content_copy</span>
+<span>Copiar email</span>
+</button>
+<a class="inline-flex items-center justify-center gap-space-sm px-space-lg py-space-md rounded-lg bg-surface-dark-card text-on-primary-container font-headline-sm text-body-sm border border-border-hairline-dark hover:bg-border-hairline-dark/40 transition-all" href="https://www.linkedin.com/in/alvaro-garcia-sanchez" rel="noreferrer" target="_blank">
+<span class="material-symbols-outlined text-[20px]">link</span>
+<span>Conectar en LinkedIn</span>
+</a>
+</div>
+<div class="mt-space-lg flex items-center gap-space-md text-text-muted font-badge-label text-caption">
+<span class="flex items-center gap-1">
+<span class="w-2 h-2 rounded-full bg-secondary inline-block"></span>
+              Respuesta en menos de 24h laborables
+            </span>
+<span>•</span>
+<span>Sanlúcar de Barrameda / Jerez / Remoto</span>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- MODAL / VISOR DE PDF INTEGRADO SIMULADOR GOOGLE DRIVE -->
+<div aria-modal="true" class="fixed inset-0 z-50 hidden bg-surface-dark/70 backdrop-blur-sm flex items-center justify-center p-space-sm md:p-space-lg" id="drive-pdf-modal" role="dialog">
+<div class="bg-surface-card w-full max-w-4xl h-[90vh] rounded-xl border border-border-hairline shadow-2xl flex flex-col overflow-hidden animate-fade-in">
+<!-- Modal Top Bar -->
+<div class="h-14 px-space-lg bg-surface-canvas border-b border-border-hairline flex items-center justify-between shrink-0">
+<div class="flex items-center gap-space-sm min-w-0">
+<div class="w-8 h-8 rounded bg-terminal-badge-bg text-secondary flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined text-[20px]">picture_as_pdf</span>
+</div>
+<div class="flex flex-col min-w-0">
+<h4 class="font-headline-sm text-body-sm text-text-primary truncate" id="modal-project-title">
+              Documento Técnico ASIR
+            </h4>
+<span class="font-badge-label text-[11px] text-text-muted truncate" id="modal-project-category">
+              Google Drive PDF Viewer Simulado
+            </span>
+</div>
+</div>
+<div class="flex items-center gap-space-xs shrink-0">
+<a class="inline-flex items-center gap-1 px-space-sm py-1 rounded bg-surface-card border border-border-hairline font-badge-label text-caption text-secondary hover:text-primary transition-colors" href="https://docs.google.com/spreadsheets/d/e/2PACX-1vT_iZCiWNH_De0JAftiMXvnWhXZZPlIouY0EHOEFeNWL3V1p4zVqgZuzjymAQ-R6ukzr3lhXpCo-hhm/pubhtml" id="modal-drive-link" rel="noreferrer" target="_blank">
+<span class="material-symbols-outlined text-[14px]">cloud_download</span>
+<span class="hidden sm:inline">Drive</span>
+</a>
+<button class="p-1.5 rounded-lg text-text-muted hover:text-text-primary hover:bg-surface-container transition-all" id="close-modal-btn">
+<span class="material-symbols-outlined text-[20px]">close</span>
+</button>
+</div>
+</div>
+<!-- Modal Body (Visor real Google Drive) -->
+<div class="flex-1 overflow-y-auto bg-surface-container-low p-space-md md:p-space-xl flex flex-col items-center gap-space-md">
+<p id="doc-sheet-desc" class="w-full max-w-3xl font-body-sm text-body-sm text-text-muted leading-relaxed"></p>
+<div class="w-full max-w-3xl rounded-lg overflow-hidden border border-border-hairline bg-surface-dark" style="min-height:60vh">
+<iframe id="modal-pdf-iframe" title="Vista previa PDF en Google Drive" class="w-full" style="height:60vh;border:0" allow="autoplay"></iframe>
+</div>
+<p class="w-full max-w-3xl font-caption text-caption text-text-muted text-center">Si la vista previa no carga, ábrelo directamente en Drive con el botón superior.</p>
+</div>
+<!-- Modal Footer -->
+<div class="h-12 px-space-lg bg-surface-card border-t border-border-hairline flex items-center justify-between text-caption font-badge-label text-text-muted shrink-0">
+<span>Presiona <kbd class="px-1.5 py-0.5 rounded bg-surface-container text-text-primary text-[10px]">ESC</kbd> para cerrar</span>
+<button class="text-secondary hover:text-primary transition-colors font-headline-sm text-caption" id="close-modal-footer-btn">
+          Cerrar Vista Previa
+        </button>
+</div>
+</div>
+</div>
+<!-- CLIENT-SIDE SCRIPT: DRIVE CSV DINÁMICO, FILTROS, BÚSQUEDA Y MODAL -->
+<script>
+const CSV_URL = "https://docs.google.com/spreadsheets/d/e/2PACX-1vT_iZCiWNH_De0JAftiMXvnWhXZZPlIouY0EHOEFeNWL3V1p4zVqgZuzjymAQ-R6ukzr3lhXpCo-hhm/pub?output=csv";
+const CATEGORY_LABELS = { linux: "LINUX & SERVIDORES", redes: "REDES & PACKET TRACER", windows: "WINDOWS SERVER & AD", scripts: "SCRIPTS & AUTOMATIZACIÓN", bd: "BASES DE DATOS" };
+let ALL_PROJECTS = [];
+// Copia local SIN backend ni Google: edita aquí o en proyectos.json.
+// Funciona hasta con doble clic (file://), donde los fetch pueden fallar.
+const LOCAL_PROJECTS = [
+  // Ejemplo (bórralo cuando el Sheet tenga datos reales):
+  // { titulo: "Servidor Linux corporativo (DNS + DHCP)", categoria: "linux", descripcion: "Debian + BIND9 + DHCP con reservas por MAC.", tags: "Debian,BIND9,DHCP", drive_id: "PEGAR_ID_DE_DRIVE", fecha: "ASIR 2026", destacado: true },
+];
+function normalizeLocal(p) {
+  return {
+    titulo: p.titulo || p.title || "Sin título",
+    categoria: String(p.categoria || p.category || "linux").toLowerCase().trim(),
+    descripcion: p.descripcion || p.description || "",
+    tags: p.tags || "",
+    drive_id: extractDriveId(p.drive_id || p.preview_url || p.drive_url || p.url || ""),
+    fecha: p.fecha || p.date || "ASIR",
+    destacado: p.destacado === true || /^(1|si|sí|true|destacado)$/i.test(String(p.destacado || ""))
+  };
+}
+function renderProjects() {
+  const grid = document.getElementById("projects-grid");
+  const loading = document.getElementById("projects-loading");
+  const empty = document.getElementById("projects-empty");
+  if (loading) loading.remove();
+  grid.querySelectorAll(".project-card").forEach(n => n.remove());
+  if (ALL_PROJECTS.length === 0) {
+    if (empty) empty.classList.remove("hidden");
+  } else {
+    if (empty) empty.classList.add("hidden");
+    grid.insertAdjacentHTML("afterbegin", ALL_PROJECTS.map(cardHtml).join(""));
+  }
+  updateCounts();
+  applyFilters();
+}
+
+function extractDriveId(input) {
+  if (!input) return "";
+  input = String(input).trim();
+  const m = input.match(/[\-\w]{25,}/);
+  return m ? m[0] : input;
+}
+function driveViewUrl(id) { return "https://drive.google.com/file/d/" + id + "/view"; }
+function drivePreviewUrl(id) { return "https://drive.google.com/file/d/" + id + "/preview"; }
+function escapeHtml(str) {
+  return String(str == null ? "" : str).replace(/[&<>"']/g, c => ({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[c]));
+}
+// Parser CSV mínimo con soporte de comillas
+function parseCSV(text) {
+  const rows = [];
+  let cur = [""], inQ = false, r = 0;
+  const out = [cur];
+  for (let i = 0; i < text.length; i++) {
+    const c = text[i];
+    if (inQ) {
+      if (c === '"') {
+        if (text[i+1] === '"') { cur[cur.length-1] += '"'; i++; }
+        else inQ = false;
+      } else cur[cur.length-1] += c;
+    } else {
+      if (c === '"') inQ = true;
+      else if (c === ",") cur.push("");
+      else if (c === "\n") { out.push(cur = [""]); }
+      else if (c === "\r") { /* skip */ }
+      else cur[cur.length-1] += c;
+    }
+  }
+  return out.filter(row => row.some(cell => String(cell).trim() !== "")).map(row => row.map(c => String(c).trim()));
+}
+function rowToProject(headers, row) {
+  const get = (name) => {
+    const idx = headers.indexOf(name);
+    return idx >= 0 ? (row[idx] || "") : "";
+  };
+  const driveRaw = get("drive_id") || get("preview_url") || get("drive_url") || get("url") || "";
+  return {
+    titulo: get("titulo") || get("title") || "Sin título",
+    categoria: (get("categoria") || get("category") || "linux").toLowerCase().trim(),
+    descripcion: get("descripcion") || get("description") || "",
+    tags: get("tags") || "",
+    drive_id: extractDriveId(driveRaw),
+    fecha: get("fecha") || get("date") || "ASIR",
+    destacado: /^(1|si|sí|true|destacado)$/i.test(get("destacado") || "")
+  };
+}
+function badgeFor(p) {
+  const label = CATEGORY_LABELS[p.categoria] || p.categoria.toUpperCase();
+  if (p.destacado) return '<span class="inline-flex items-center gap-1 font-badge-label text-[11px] px-2 py-0.5 rounded bg-terminal-badge-bg text-secondary border border-terminal-badge-border"><span class="material-symbols-outlined text-[12px]">star</span>DESTACADO · ' + escapeHtml(label) + '</span>';
+  return '<span class="inline-flex items-center gap-1 font-badge-label text-[11px] px-2 py-0.5 rounded bg-surface-container text-text-muted">' + escapeHtml(label) + '</span>';
+}
+function tagsHtml(p) {
+  return p.tags.split(/[;,|]/).map(t => t.trim()).filter(Boolean).slice(0, 6)
+    .map(t => '<span class="px-2 py-0.5 rounded bg-surface-container font-badge-label text-caption text-text-primary">' + escapeHtml(t) + '</span>').join("");
+}
+function cardHtml(p, idx) {
+  const view = p.drive_id ? driveViewUrl(p.drive_id) : "#proyectos";
+  return '<article class="project-card bg-surface-card rounded-xl border border-border-hairline p-space-lg flex flex-col justify-between shadow-sm hover:border-terminal-badge-border hover:shadow-md transition-all" data-category="' + escapeHtml(p.categoria) + '" data-tags="' + escapeHtml((p.titulo + " " + p.tags + " " + p.descripcion).toLowerCase()) + '">' +
+    '<div><div class="flex items-center justify-between mb-space-sm">' + badgeFor(p) + '<span class="font-caption text-caption text-text-muted">' + escapeHtml(p.fecha) + '</span></div>' +
+    '<h3 class="font-headline-sm text-headline-sm text-text-primary mb-space-xs leading-snug">' + escapeHtml(p.titulo) + '</h3>' +
+    '<p class="font-body-sm text-body-sm text-text-muted mb-space-md">' + escapeHtml(p.descripcion) + '</p>' +
+    '<div class="flex flex-wrap gap-1.5 mb-space-lg">' + tagsHtml(p) + '</div></div>' +
+    '<div class="flex items-center justify-between gap-space-sm pt-space-sm border-t border-surface-container">' +
+    '<button class="open-modal-btn inline-flex items-center gap-space-xs text-secondary font-headline-sm text-caption hover:text-primary transition-colors" data-idx="' + idx + '"><span class="material-symbols-outlined text-[16px]">visibility</span><span>Ver Documentación</span></button>' +
+    '<a class="text-text-muted hover:text-primary transition-colors p-1" href="' + view + '" rel="noreferrer" target="_blank" title="Abrir archivo en Google Drive"><span class="material-symbols-outlined text-[18px]">open_in_new</span></a>' +
+    '</div></article>';
+}
+function updateCounts() {
+  const n = ALL_PROJECTS.length;
+  const label = document.getElementById("projects-count-label");
+  const num = document.getElementById("projects-count-num");
+  if (label) label.textContent = n === 0 ? "Sin proyectos todavía — añade filas a tu Google Sheet" : (n + (n === 1 ? " memoria técnica en PDF" : " memorias técnicas en PDF"));
+  if (num) num.textContent = n;
+}
+function applyFilters() {
+  const active = (document.querySelector(".filter-btn.bg-primary") || {}).dataset?.category || "all";
+  const q = (document.getElementById("project-search")?.value || "").toLowerCase().trim();
+  document.querySelectorAll("#projects-grid .project-card").forEach(card => {
+    const okCat = active === "all" || card.dataset.category === active;
+    const okQ = !q || (card.dataset.tags || "").includes(q);
+    card.classList.toggle("hidden", !(okCat && okQ));
+  });
+}
+function openModalByIndex(idx) {
+  const p = ALL_PROJECTS[idx];
+  if (!p) return;
+  const modal = document.getElementById("drive-pdf-modal");
+  const t = document.getElementById("modal-project-title");
+  const c = document.getElementById("modal-project-category");
+  const d = document.getElementById("doc-sheet-desc");
+  const f = document.getElementById("modal-pdf-iframe");
+  const l = document.getElementById("modal-drive-link");
+  if (t) t.textContent = p.titulo;
+  if (c) c.textContent = (CATEGORY_LABELS[p.categoria] || p.categoria) + " · Google Drive";
+  if (d) d.textContent = p.descripcion;
+  if (f) f.src = p.drive_id ? drivePreviewUrl(p.drive_id) : "about:blank";
+  if (l && p.drive_id) l.href = driveViewUrl(p.drive_id);
+  modal.classList.remove("hidden");
+  document.body.style.overflow = "hidden";
+}
+function closeModal() {
+  const modal = document.getElementById("drive-pdf-modal");
+  const f = document.getElementById("modal-pdf-iframe");
+  if (f) f.src = "about:blank";
+  modal.classList.add("hidden");
+  document.body.style.overflow = "";
+}
+async function loadProjects() {
+  const loading = document.getElementById("projects-loading");
+  const empty = document.getElementById("projects-empty");
+  const errBox = document.getElementById("projects-error");
+  let loadError = null;
+  let source = "drive";
+  const isFileProto = window.location && window.location.protocol === "file:";
+  // 1. Intentar Google Sheets CSV (sin backend, solo frontend). En file:// (doble clic)
+  // el navegador bloquea fetch por CORS/seguridad: se salta directo a datos locales.
+  if (isFileProto) {
+    loadError = null;
+  } else try {
+    const res = await fetch(CSV_URL + (CSV_URL.includes("?") ? "&" : "?") + "t=" + Date.now(), { mode: "cors", cache: "no-store" });
+    if (!res.ok) throw new Error("HTTP " + res.status);
+    const text = await res.text();
+    const rows = parseCSV(text);
+    if (rows.length >= 2) {
+      const headers = rows[0].map(h => String(h).toLowerCase().trim());
+      const parsed = rows.slice(1).map(r => rowToProject(headers, r)).filter(p => (p.titulo && p.titulo !== "Sin título") || p.drive_id);
+      if (parsed.length > 0) { ALL_PROJECTS = parsed; source = "drive"; }
+      else loadError = "CSV vacío (solo cabecera o sin filas)";
+    } else loadError = "CSV vacío (el Sheet no tiene filas publicadas)";
+  } catch (e) {
+    console.error("Error cargando CSV:", e);
+    loadError = e.message || String(e);
+  }
+  // 2. Fallback sin backend: proyectos.json local (vale en hosting estático; en file:// el navegador lo bloquea, por eso existe el inline)
+  if (!isFileProto && ALL_PROJECTS.length === 0) {
+    try {
+      const r2 = await fetch("proyectos.json", { cache: "no-store" });
+      if (r2.ok) {
+        const arr = await r2.json();
+        if (Array.isArray(arr) && arr.length > 0) { ALL_PROJECTS = arr.map(normalizeLocal); source = "local-json"; }
+      }
+    } catch (e2) { /* file:// bloquea fetch local: se usa el inline */ }
+  }
+  // 3. Fallback final inline (funciona hasta con doble clic)
+  if (ALL_PROJECTS.length === 0 && LOCAL_PROJECTS.length > 0) {
+    ALL_PROJECTS = LOCAL_PROJECTS.map(normalizeLocal);
+    source = "local-inline";
+  }
+  renderProjects();
+  if (isFileProto) {
+    // Modo doble clic: sin fetch, sin error rojo. Solo datos incrustados.
+    if (errBox) errBox.classList.add("hidden");
+    const lbl = document.getElementById("projects-count-label");
+    if (lbl) {
+      if (ALL_PROJECTS.length > 0) lbl.textContent += " · modo archivo local (doble clic)";
+      else lbl.textContent = "Modo archivo local (doble clic): edita LOCAL_PROJECTS en index.html o sirve la web para usar Drive";
+    }
+    return;
+  }
+  if (errBox) {
+    if (ALL_PROJECTS.length > 0 && source !== "drive") {
+      errBox.classList.remove("hidden");
+      errBox.innerHTML = '<p class="font-headline-sm text-body-sm font-semibold mb-1">Drive no disponible (' + escapeHtml(loadError || "sin datos") + '): mostrando copia local.</p>' +
+        '<div class="flex items-center justify-center gap-space-sm flex-wrap">' +
+        '<button id="projects-retry" class="px-space-md py-space-xs rounded-lg bg-primary text-on-primary font-headline-sm text-caption">Reintentar Drive</button>' +
+        '</div>';
+      errBox.querySelector("#projects-retry")?.addEventListener("click", () => {
+        errBox.classList.add("hidden");
+        ALL_PROJECTS = [];
+        if (loading) { /* ya eliminado en primer render; recargar es más fiable */ location.reload(); return; }
+        loadProjects();
+      });
+    } else if (ALL_PROJECTS.length === 0 && loadError && loadError !== "CSV vacío (el Sheet no tiene filas publicadas)" && loadError !== "CSV vacío (solo cabecera o sin filas)") {
+      errBox.classList.remove("hidden");
+      errBox.innerHTML = '<p class="font-headline-sm text-body-sm font-semibold mb-1">No se pudo cargar el Sheet (' + escapeHtml(loadError) + ')</p>' +
+        '<p class="mb-3">Esto suele ser red/bloqueador o abrir con doble clic. Prueba con servidor local (<code>npx serve .</code>) o mete los proyectos en <code>proyectos.json</code> / <code>LOCAL_PROJECTS</code>, que no necesitan a Google. CSV usado:<br/><code class="break-all">' + escapeHtml(CSV_URL) + '</code></p>' +
+        '<div class="flex items-center justify-center gap-space-sm flex-wrap">' +
+        '<button id="projects-retry" class="px-space-md py-space-xs rounded-lg bg-primary text-on-primary font-headline-sm text-caption">Reintentar</button>' +
+        '<a class="font-headline-sm text-caption text-secondary hover:text-primary" target="_blank" rel="noreferrer" href="https://docs.google.com/spreadsheets/d/e/2PACX-1vT_iZCiWNH_De0JAftiMXvnWhXZZPlIouY0EHOEFeNWL3V1p4zVqgZuzjymAQ-R6ukzr3lhXpCo-hhm/pubhtml">Abrir Sheet publicado</a>' +
+        '</div>';
+      errBox.querySelector("#projects-retry")?.addEventListener("click", () => {
+        errBox.classList.add("hidden");
+        ALL_PROJECTS = [];
+        location.reload();
+      });
+    } else {
+      errBox.classList.add("hidden");
+    }
+  }
+}
+document.addEventListener("DOMContentLoaded", () => {
+  document.querySelectorAll(".filter-btn").forEach(btn => {
+    btn.addEventListener("click", () => {
+      document.querySelectorAll(".filter-btn").forEach(b => { b.classList.remove("bg-primary", "text-on-primary"); b.classList.add("bg-surface-card", "text-text-muted"); });
+      btn.classList.remove("bg-surface-card", "text-text-muted");
+      btn.classList.add("bg-primary", "text-on-primary");
+      applyFilters();
+    });
+  });
+  document.getElementById("project-search")?.addEventListener("input", applyFilters);
+  // Copiar email al portapapeles (funciona aunque no haya cliente de correo)
+  document.querySelectorAll("[data-email]").forEach(btn => {
+    btn.addEventListener("click", async () => {
+      const email = btn.dataset.email || "alvarogprod@gmail.com";
+      try {
+        await navigator.clipboard.writeText(email);
+      } catch (e) {
+        const ta = document.createElement("textarea");
+        ta.value = email;
+        document.body.appendChild(ta);
+        ta.select();
+        try { document.execCommand("copy"); } catch (err) {}
+        ta.remove();
+      }
+      const original = btn.innerHTML;
+      btn.innerHTML = '<span class="material-symbols-outlined text-[18px]">check</span><span>Copiado</span>';
+      setTimeout(() => { btn.innerHTML = original; }, 1600);
+    });
+  });
+  const tg = document.getElementById("toggle-config-btn");
+  const dr = document.getElementById("drive-config-drawer");
+  tg?.addEventListener("click", () => dr?.classList.toggle("hidden"));
+  document.getElementById("projects-grid")?.addEventListener("click", (e) => {
+    const b = e.target.closest(".open-modal-btn");
+    if (b && b.dataset.idx !== undefined) openModalByIndex(Number(b.dataset.idx));
+  });
+  document.getElementById("close-modal-btn")?.addEventListener("click", closeModal);
+  document.getElementById("close-modal-footer-btn")?.addEventListener("click", closeModal);
+  document.getElementById("drive-pdf-modal")?.addEventListener("click", (e) => { if (e.target.id === "drive-pdf-modal") closeModal(); });
+  document.addEventListener("keydown", (e) => { if (e.key === "Escape" && !document.getElementById("drive-pdf-modal").classList.contains("hidden")) closeModal(); });
+  loadProjects();
+});
+</script>
+</div></main><footer class="w-full bg-surface-container-low shadow-[0_-1px_8px_rgba(0,0,0,0.02)]"><div class="max-w-6xl mx-auto px-gutter-mobile md:px-gutter py-space-xl flex flex-col md:flex-row items-center justify-between gap-space-md"><div class="flex flex-col items-center md:items-start gap-space-xs"><div class="flex items-center gap-space-xs font-badge-label text-code-inline text-text-primary"><span class="material-symbols-outlined text-primary text-[18px]">terminal</span><span>Álvaro García Sánchez · Portfolio ASIR</span></div><p class="font-caption text-caption text-text-muted text-center md:text-left">Portfolio y banco de prácticas técnicas ASIR con sincronización a Google Drive</p></div><div class="flex items-center gap-space-md text-on-surface-variant"><a class="inline-flex items-center gap-space-xs font-caption text-caption hover:text-primary transition-colors" href="https://www.linkedin.com/in/alvaro-garcia-sanchez" rel="noreferrer" target="_blank"><span class="material-symbols-outlined text-[16px]">link</span><span>LinkedIn</span></a><a class="inline-flex items-center gap-space-xs font-caption text-caption hover:text-primary transition-colors" href="#proyectos"><span class="material-symbols-outlined text-[16px]">folder_shared</span><span>Documentación Drive</span></a></div><div class="font-caption text-caption text-text-muted text-center md:text-right">© 2026 Álvaro García Sánchez • ASIR</div></div></footer></body></html>
