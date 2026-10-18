@@ -55,27 +55,6 @@
 <div class="rounded-xl overflow-hidden border border-border-hairline shadow-md bg-surface-card">
 <img src="foto-cv.jpg" alt="Foto de Álvaro García Sánchez" class="w-full h-auto object-cover" loading="lazy"/>
 </div>
-<!-- Tarjeta QR: acceso directo al CV alojado en GitHub -->
-<div class="rounded-xl border border-border-hairline shadow-md bg-surface-card p-space-md flex items-center gap-space-md">
-<a class="shrink-0 rounded-lg border border-border-hairline bg-white p-1.5 hover:border-terminal-badge-border transition-all" href="CV_Alvaro_Garcia_Sanchez_2026.pdf" target="_blank" rel="noreferrer" title="Ver el CV en el navegador">
-<img alt="Código QR para ver y descargar el CV de Álvaro García Sánchez" class="w-24 h-24 object-contain" loading="lazy" src="qr-code-github.png"/>
-</a>
-<div class="flex flex-col gap-space-xs min-w-0">
-<p class="font-body-sm text-body-sm text-text-muted leading-relaxed">
-Escanea el código QR con el móvil o usa los enlaces para verlo y descargarlo.
-</p>
-<div class="flex flex-wrap items-center gap-space-md">
-<a class="inline-flex items-center gap-space-xs font-headline-sm text-caption text-secondary hover:text-primary transition-colors" href="CV_Alvaro_Garcia_Sanchez_2026.pdf" target="_blank" rel="noreferrer" title="Ver el CV en el navegador">
-<span class="material-symbols-outlined text-[16px]">visibility</span>
-<span>Ver CV (PDF)</span>
-</a>
-<a class="inline-flex items-center gap-space-xs font-headline-sm text-caption text-text-muted hover:text-primary transition-colors" href="CV_Alvaro_Garcia_Sanchez_2026.pdf" download="CV_Alvaro_Garcia_Sanchez_2026.pdf" title="Descargar el CV (PDF)">
-<span class="material-symbols-outlined text-[16px]">download</span>
-<span>Descargar CV</span>
-</a>
-</div>
-</div>
-</div>
 <div class="rounded-xl bg-surface-dark text-on-primary-container p-space-md shadow-md border border-border-hairline-dark flex flex-col font-code-inline text-caption">
 <!-- Terminal Header -->
 <div class="flex items-center justify-between pb-space-sm border-b border-border-hairline-dark/60 mb-space-sm">
@@ -102,6 +81,20 @@ Escanea el código QR con el móvil o usa los enlaces para verlo y descargarlo.
 <div class="text-primary-fixed flex items-center gap-space-xs pl-space-xs">
 <span class="w-1.5 h-1.5 rounded-full bg-secondary-container animate-pulse"></span>
 <span>active (running) - Uptime 100%</span>
+</div>
+<!-- Bloque CV integrado en la terminal: comando + QR + enlaces de ver/descargar -->
+<div class="text-secondary-fixed pt-space-xs">
+<span class="text-terminal-badge-border">$</span> cv --export qrcode
+</div>
+<div class="flex items-center gap-space-sm pl-space-xs">
+<a class="shrink-0 rounded-md bg-white p-1 border border-terminal-badge-border hover:border-secondary transition-colors" href="CV_Alvaro_Garcia_Sanchez_2026.pdf" target="_blank" rel="noreferrer" title="Ver el CV en el navegador">
+<img alt="Código QR para ver y descargar el CV de Álvaro García Sánchez" class="w-20 h-20 object-contain" loading="lazy" src="qr-code-github.png"/>
+</a>
+<div class="flex flex-col gap-1.5 min-w-0">
+<a class="text-primary-fixed hover:text-secondary-fixed transition-colors hover:underline underline-offset-2" href="CV_Alvaro_Garcia_Sanchez_2026.pdf" target="_blank" rel="noreferrer" title="Ver el CV en el navegador">» Ver CV (PDF)</a>
+<a class="text-primary-fixed hover:text-secondary-fixed transition-colors hover:underline underline-offset-2" href="CV_Alvaro_Garcia_Sanchez_2026.pdf" download="CV_Alvaro_Garcia_Sanchez_2026.pdf" title="Descargar el CV (PDF)">» Descargar CV</a>
+<span class="text-surface-dim text-[11px] opacity-80">Escanea el QR desde el móvil</span>
+</div>
 </div>
 </div>
 </div>
